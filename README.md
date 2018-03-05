@@ -8,7 +8,7 @@ There are two types of variables.
 * Variable (var) - mutable
 * Value (val) - immutable
 
-```
+```scala
 val name : String = "Jan"
 val age = 12
 
