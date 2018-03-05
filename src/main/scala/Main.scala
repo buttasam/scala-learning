@@ -4,7 +4,17 @@
 object Main {
 
   def main(args: Array[String]): Unit = {
-    println("Hello world")
+
+    variables()
+
+  }
+
+  def variables() : Unit = {
+    val name: String = "Jan"
+    val age = 12
+
+    var nameMutable: String = "Jan"
+    nameMutable = "Jan Novak"
   }
 
 }
