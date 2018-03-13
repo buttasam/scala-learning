@@ -4,8 +4,14 @@
 object Main {
 
   def main(args: Array[String]): Unit = {
-    variables()
-    basicStructures()
+
+    charElem()
+
+  }
+
+  def rac() : Unit = {
+    println(Rac(1,2) * Rac(3,4))
+    println(Rac(1,2) == Rac(3,4))
   }
 
   def variables(): Unit = {
@@ -30,6 +36,15 @@ object Main {
     //for can produce collection by the keyword yield
     val numbersSquare = for(i <- numbers) yield i * i
     numbersSquare.foreach(n => println(n))
+  }
+
+  def charElem() : Unit = {
+    val charElem = new CharElem('x', 5, 6)
+    println(charElem)
+
+    println(new CharElem('x', 5, 3) above new CharElem('y', 4, 2))
+    println(new CharElem('x', 5, 3) beside  new CharElem('y', 4, 2))
+
   }
 
 }
