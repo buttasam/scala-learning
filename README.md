@@ -1,7 +1,7 @@
 Scala learning
 ---
 
-##Vals and Vars
+## Vals and Vars
 
 There are two types of variables.
 * Variable (var) - mutable
@@ -15,7 +15,7 @@ var nameMutable: String = "Jan"
 nameMutable = "Jan Novak"
 ```
 
-##Basic structures
+## Basic structures
 
 Basic control structures are if, for, match, try and block.
 
@@ -30,7 +30,7 @@ for(i <- numbers) {
 }
 ```
 
-###For control
+### For control
 
 For can produce collection by the keyword yield.
 ```scala
@@ -38,7 +38,7 @@ val numbersSquare = for(i <- numbers) yield i * i
 numbersSquare.foreach(n => println(n))
 ```
 
-##Functions
+## Functions
 Functions are introduced by the keyword _def_.
 ```scala
 def sum(a: Int, b: Int) : Int = a + b
