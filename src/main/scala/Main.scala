@@ -5,8 +5,11 @@ object Main {
 
   def main(args: Array[String]): Unit = {
 
-    charElem()
 
+    (List(1,3,6,4) ++ List(2,3))
+      .map(n => n*n)
+      .filter(n => n < 10)
+      .foreach(n => print(n))
   }
 
   def rac() : Unit = {
@@ -46,5 +49,8 @@ object Main {
     println(new CharElem('x', 5, 3) beside  new CharElem('y', 4, 2))
 
   }
+
+
+  def sum(a: Int, b: Int) : Int = a + b
 
 }
